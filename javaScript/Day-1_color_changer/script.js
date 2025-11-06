@@ -1,3 +1,4 @@
+const button = document.getElementById("clickMe");
 function getrandomcolor() {
   const letters = "123456789ABCDEF";
   let hexColor = "#";
@@ -10,5 +11,6 @@ function getrandomcolor() {
 function changeColor() {
   document.body.style.backgroundColor = getrandomcolor();
 }
+button.addEventListener("click", changeColor);
 
-// setInterval(changeColor,1000); 
+// setInterval(changeColor,1000);
